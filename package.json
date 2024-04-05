@@ -1,0 +1,39 @@
+{
+  "name": "london-rock-backend",
+  "version": "1.0.0",
+  "description": "London Rock Properties site backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+  },
+  "keywords": [
+    "javascrip",
+    "react-js",
+    "node-js"
+  ],
+  "author": "asif-mehmood",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^2.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-session": "^1.18.0",
+    "http": "^0.0.1-security",
+    "mongoose": "^8.1.1",
+    "mongoose-aggregate-paginate-v2": "^1.0.7",
+    "multer": "^1.4.5-lts.1",
+    "node-cache": "^5.1.2",
+    "nodemailer": "^6.9.13",
+    "socket.io": "^4.7.4",
+    "uuid": "^9.0.1"
+  }
+}
