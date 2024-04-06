@@ -23,7 +23,13 @@ app.use(session({
     saveUninitialized: false,
     cookie: {
         expires: 60 * 60 * 24 * 2,
-        httpOnly: false,
+        // httpOnly: false,
+        // asif have change it after deployment start
+        maxAge: 1000 * 60 * 60 * 24 * 2, // 2 days
+        httpOnly: true, // Restrict cookie access to HTTP(S) requests only
+        secure: process.env.NODE_ENV === 'production' // Set secure attribute only in production
+
+        // asif have change it after deployment end
     }
 }));
 
